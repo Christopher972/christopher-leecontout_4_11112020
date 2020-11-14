@@ -101,8 +101,12 @@ a:hover {
 
 .d-bloc {
     color: rgba(255, 255, 255, .7);
+    font-size: 15px;
 }
-
+.partenaires
+{
+    margin: 30px;
+}
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
 }
@@ -476,7 +480,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 35px!important;
 }
 
 .icon-lg {
@@ -653,7 +657,11 @@ a {
     font-weight: 400;
     color: #575757!important;
 }
-
+.text-portfolio
+{
+    transform: translate(0px,-15px);
+    text-align:center;
+}
 .container {
     max-width: 1000px;
 }
@@ -702,11 +710,15 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
 }
 
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+    color: black !important;
 }
 
 h3 {
@@ -727,7 +739,7 @@ h1 {
 }
 
 h4 {
-    color: #333333!important;
+    color:black !important;
 }
 
 .icons {
@@ -737,6 +749,7 @@ h4 {
 
 .white {
     color: #FFFFFF!important;
+    font-size: 16px;
 }
 
 .portfolio-thumb {
@@ -744,8 +757,8 @@ h4 {
 }
 
 .portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .avatar {
@@ -771,7 +784,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #B65E41;
 }
 
 .tc-white {
@@ -779,7 +792,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #B65E41;
     color: #FFFFFF!important;
 }
 
@@ -839,26 +852,18 @@ h4 {
     }
 }
 
-@media (max-width: 992px) and (min-width: 768px) {
+@media (min-width: 768px) {
     .navbar .nav {
         max-width: 80%
     }
     .nav-center.navbar .nav {
         max-width: 100%
     }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
 
 @media (max-width: 991px) {
     .container {
@@ -872,10 +877,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+    
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +886,15 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+       
+    }
+    .img-responsive{
+        position: relative;
+        width: 100%;
+    }
+    figcaption
+    {
+        transform: translate(0px,-15px);
     }
 }
 
