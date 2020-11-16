@@ -245,16 +245,24 @@
 						<div class="col-sm-6">
 							<form id="form_1" novalidate >
 								<div class="form-group">
-									<label>Nom<input id="name" class="form-control" required /></label>	
+									<label for="name">Nom</label>
+									<input id="name" class="form-control" required />	
 								</div>
 								<div class="form-group">
-									<label>Adresse email<input id="email" class="form-control" type="email" required /></label>	
+									<label for="email">Adresse email</label>	
+									<input id="email" class="form-control" type="email" required />
 								</div>
 								<div class="form-group">
-									<label>Comment nous avez-vous connu ?<input class="form-control" required id="input_504" /></label>
+									<label for="discover">Comment nous avez-vous connu ?</label>
+                  					<select id="discover" class="form-control">
+                    					<option selected>Site Partenaire</option>
+                    					<option value="1">Réseaux sociaux</option>
+                    					<option value="2">Bouche à oreille</option>
+                    					<option value="3">Internet</option>
+                  					</select>
 								</div>
 								<div class="form-group">
-									<label>
+									<label for="message">
 										Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 									 	<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 									</label> 
