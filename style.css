@@ -902,6 +902,12 @@ h4 {
     }
 }
 
+@media (min-width: 1024px){
+    .contact {
+        text-align: center;
+    }
+}
+
 @media (max-width: 767px) {
     .page-container {
         overflow-x: hidden;
